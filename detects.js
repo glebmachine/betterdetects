@@ -10,7 +10,7 @@
     if (!version) {
       return v;
     }
-    return v===version;
+    return v === version;
   };
 
   win._isIpad = ua.match(/iPad/i) !== null;
@@ -30,4 +30,6 @@
   win._isOpera = ua.toLowerCase().indexOf('Opera') > -1;
   win._isSafari = ua.indexOf('Safari') !== -1 && ua.indexOf('Chrome') === -1;
 
+  win._isApple = win._isIpod || win._isIphone || win._isIpad;
+  win._isMobile = win._isAndroid || win._isApple || win._isIEMobile;
 })();

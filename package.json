@@ -1,0 +1,8 @@
+{
+  "name": "betterdetects",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.7.2"
+  }
+}
+
